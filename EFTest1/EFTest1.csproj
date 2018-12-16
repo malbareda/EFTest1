@@ -53,6 +53,7 @@
     <Compile Include="Curs.cs" />
     <Compile Include="Modul.cs" />
     <Compile Include="Professor.cs" />
+    <Compile Include="ProvaContext.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Grade.cs" />
     <Compile Include="SchoolContext.cs" />

@@ -20,7 +20,7 @@ namespace EFTest1
         public string nom { get; set; }
         [Column("hores_setmana")] //nom
         public int horesSetmana { get; set; }
-        //public SqlDateTime dataInici { get; set; }
+        public SqlDateTime dataInici { get; set; }
         //relacio 1 a n, inferida per el sistema
         public Curs Curs { get; set; }
         //relacio n a n, inferida per el sistema
@@ -31,7 +31,7 @@ namespace EFTest1
         public Modul()
         {
             this.Professors = new HashSet<Professor>();
-            //this.dataInici = new SqlDateTime(DateTime.Now);
+            this.dataInici = new SqlDateTime(DateTime.Now);
         }
 
     }

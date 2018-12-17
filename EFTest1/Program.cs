@@ -32,6 +32,7 @@ namespace EFTest1
                 ctx.Professor.Add(grego);
                 Console.WriteLine(marc.Moduls);
                 ctx.SaveChanges();
+                Console.WriteLine("Todo Ha salido a pedir de Milhouse");
             }
         }
     }

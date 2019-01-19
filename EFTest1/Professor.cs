@@ -12,8 +12,8 @@ namespace EFTest1
     [Table("Professor")]  //si la taula es diu com la classe no cal
     public class Professor
     {
-        
-        public int ProfessorID { get; set; }  //assumeix per el nom que es la ID
+        //Formula autonumerada    NomdelaclasseID
+        public int ProfessorID { get; set; }  //assumeix per el nom que es la ID i que es autonumerada. 
         [Required]
         public string nom { get; set; }
         [Required]

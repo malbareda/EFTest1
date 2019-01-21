@@ -21,7 +21,17 @@ namespace EFTest1
             //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<ProvaContext>());  //aquest seria un metode update pero si canvies el model (els POCOS) reinicia la DB
             Database.SetInitializer(new DropCreateDatabaseAlways<ProvaContext>());  //equivaldria a un create
 
+            /*modelBuilder.Entity<Modul>()
+            .HasRequired<Curs>(m => m.Curs)
+            .WithMany(c => c.Modul)
+            .HasForeignKey<int>(m => m.elSeuCurs)
+            .WillCascadeOnDelete(false);
+            */
+
+
             base.OnModelCreating(modelBuilder);
+
+
         }
 
     }

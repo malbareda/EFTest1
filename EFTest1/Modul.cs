@@ -24,7 +24,7 @@ namespace EFTest1
         //relacio 1 a n, inferida per el sistema
         public Curs Curs { get; set; }
 
-        public int elSeuCurs { get; set; }
+        //public int elSeuCurs { get; set; }
         //relacio n a n, inferida per el sistema
         public virtual ICollection<Professor> Professors { get; set; } //per a inferir ha de ser el nom de l'altra classe amb s al final
 
